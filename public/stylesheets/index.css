@@ -17,7 +17,7 @@ nav, section, aside {
 	margin-top: 90px;
 }
 nav {
-	width: 25%;
+	width: 15%;
 	display: block;
 	float: left;
 }
@@ -27,7 +27,7 @@ aside {
 	float: left;
 }
 section {
-	width: 50%;
+	width: 60%;
 	padding: 0 25px;
 	display: block;
 	float: left;
@@ -132,7 +132,7 @@ section {
 }
 
 .survey {
-	width: 460px;
+	width: 562px;
 	min-height: 180px;
 	background: #FFF;
 	padding: 15px 25px;
@@ -151,7 +151,7 @@ section {
 	height: 40px;
 }
 .survey-title {
-	width: 370px;
+	width: 474px;
 	float: left;
 	text-align: left;
 	font-size: 22px;
