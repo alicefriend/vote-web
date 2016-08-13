@@ -1,19 +1,9 @@
-.col-12 {
-	width: 100%;
-}
-
-.col-3 {
-	width: 25%;
-}
-
-.col-6 {
-	width: 50%;
-}
-
+/****************************** base structure start ******************************/
 body {
+	width: 1020px;
+	margin: 0 auto;
 	background-color: #F5F8FA;
 }
-
 header {
 	width: 100%;
 	height: 70px;
@@ -21,64 +11,85 @@ header {
 	left: 0px;
 	right: 0px;
 	background-color: #00BCD4;
-	color: #FFF;
 	z-index: 999;
-	border-radius: 
+}
+nav, section, aside {
+	margin-top: 90px;
+}
+nav {
+	width: 25%;
+	display: block;
+	float: left;
+}
+aside {
+	width: 25%;
+	display: block;
+	float: left;
+}
+section {
+	width: 50%;
+	padding: 0 25px;
+	display: block;
+	float: left;
+}
+.nav-wrapper, .aside-wrapper, .section-wrapper {
+	border-radius: 5px;
+}
+.nav-wrapper {
+	background-color: #FFF;
+	height: 1400px;
+}
+.section-wrapper {
+	width: 100%;
+	background-color: #0097A7;
+	padding-top: 30px;
+}
+.aside-wrapper {
+	background-color: #F5F8FA;
+	height: 600px;
 }
 
+/****************************** header style start ******************************/
 .header-wrapper{
 	width: 1020px;
+	height: 100%;
 	margin: 0 auto;
-	position: relative;
-	padding-left: 15px;
-	top: 10px;
+	padding-top: 10px;
 }
-
 .logo-box {
 	padding: 0px;
 	display: inline-block;
 	float: left;
 	width: 12%;
 }
-
-.logo-box a {
-	display: inline-block;
-	width: 108px;
-}
-
-.glyphicon-search {
-	font-size: 34px;
-	position: relative;
-	top: 4px;
-	font-size: 24px;
-	padding: 4px;
-	color: white;
-}
-
 .logo-img {
 	width: 49px;
-	min-width: 49px;
 	height: 49px;
-	min-height: 49px;
 	float: left;
 }
-
 .logo-name {
-	min-width: 56px;
-	font-family: cursive;
 	font-size: 32px;
+	font-family: cursive;
 	float: left;
 	color: #FFF;
 }
 
+
 .search-box {
 	float: left;
-	width: 50%;
 }
-
-.search-bar {
-	width: 68%;
+.search-icon {
+	position: relative;
+	top: 5px;
+	font-size: 24px;
+	padding: 4px;
+	color: white;
+}
+.search-input {
+	width: 400px;
 	display: inline-block;
+	position: relative;
+	top: 1px;
 	margin-bottom: 20px;
 }
 
@@ -87,8 +98,7 @@ header {
 	margin-top: 4px;
 	float: right;
 }
-
-.sign-btn-group > *{
+.sign-btn-group > button {
 	float: right;
 	width: 90px;
 	margin-right: 5px;
@@ -98,153 +108,102 @@ header {
 	border-width: 2px;
 }
 
-.sign-btn-hidden-group {
-	margin-top: 4px;
-	display: none;
-	float: right;
-}
 
-.sign-btn-hidden-group button {
-	color: #E91E63;
-}
-
-.contents-wraper {
-	width: 1020px;
-	margin: 0 auto;
-	position: relative;
-	top: 85px;
-	z-index: 100;
-	display: block;
-}
-
-nav {
-	min-width: 200px;
-	display: block;
-	float: left;
-}
-
-aside {
-	min-width: 200px;
-	display: block;
-	float: left;
-}
-
-section {
-	padding: 0 25px;
-	display: block;
-	float: left;
-}
-
-.nav-wrapper, .aside-wrapper, .section-wrapper {
-	border-radius: 5px;
-}
-
-.nav-wrapper {
-	background-color: #FFF;
-	height: 1400px;
-}
-
-.aside-wrapper {
-	background-color: #F5F8FA;
-	height: 600px;
-}
-
+/****************************** aside style start ******************************/
 .rank-box, .hot-box, .suggest-box {
 	background-color: #FFF;
 	margin-bottom: 30px;
 }
-
 .rank-box {
-	background: #FFF;
 	height: 250px;
 }
-
 .hot-box {
-	background: #FFF;
 	height: 250px;
 }
-
 .suggest-box {
-	background: #FFF;
 	height: 300px;
 }
 
-.section-wrapper {
-	background-color: #0097A7;
-	padding-top: 30px;
-}
 
-.body-wrapper {
-	background-color: #E0F7FA;
-}
-
-.section-wrapper {
-	width: 100%;	
-}
-
+/****************************** section survey style start ******************************/
 .survey-item-container {
-	background-color: #FFF;
-	height: 3000px;
+	width: 100%;
+	background-color: #F5F8FA;
 }
 
-.survey-item {
-	width: 100%;
+.survey {
+	width: 460px;
 	min-height: 180px;
+	background: #FFF;
 	padding: 15px 25px;
+	margin-bottom: 30px;
 	border-bottom: 1px solid #e1e8ed;
 }
 
-.survey-radio-box > .radio {
-	margin: 0px;
-	cursor:pointer;
-	border-radius: 5px;
-	padding: 15px 10px;
-	padding-top: 15px;
-	padding-bottom: 15px;
-	opacity: 0.87;
+.survey .glyphicon {
+	font-size: 20px;
+	padding: 6px;
+	opacity: 0.54;
 }
 
+.survey-top {
+	width: 100%;
+	height: 40px;
+}
 .survey-title {
+	width: 370px;
+	float: left;
 	text-align: left;
 	font-size: 22px;
 	opacity: 0.87;
 	font-family: sans-serif;
 }
-
-.primary-text {
-	opacity: 0.87;
+.survey-share {
+	float: right;
+	margin-right: 3px;
+	position: relative;
+	top: -3px;
+}
+.survey-share:hover {
+	font-size: 23px;
+	opacity: 0.86;
+	color: #3B5998;
 }
 
-.secondary-text {
-	opacity: 0.54;
+
+.show-toggle-btn {
+	float: right;
 }
-
-.hint-text {
-	opacity: 0.38;
-}
-
-
-.survey-bottom {
-	width: 100%
-}
-
-.survey-show-toggle {
-	text-align: right;
-}
-
-.survey-show-result {
-	color: #F5F8FA;
-	font-size: 26px;
-}
-
-.survey-show-select {
-	color: #F5F8FA;
-	font-size: 26px;
+.show-toggle-btn .survey-select {
 	display: none;
 }
-
-.survey-radio-box>.radio:hover {
-	background-color: #DDDDDD;
-	padding-left: 15px;
+.show-toggle-btn .survey-result:hover {
+	color: #0097A7;
+	font-size: 23px;
+	opacity: 0.86;
+}
+.survey-bottom-btns .survey-complain {
+	opacity: 0.1;
+}
+.survey-bottom-btns .survey-complain:hover {
+	opacity: 0.56;
 }
 
+
+.survey-mid {
+	margin: 10px 0;
+}
+.survey-radio-box > .radio {
+	width: 370px;
+	margin: 0px;
+	cursor:pointer;
+	border-radius: 10px;
+	padding: 15px 10px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	opacity: 0.87;
+}
+.survey-radio-box > .radio:hover {
+	background-color: #F5F8FA;
+	padding-left: 8px;
+}
