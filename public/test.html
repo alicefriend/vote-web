@@ -18,8 +18,10 @@
 				</a>
 			</div>
 			<div class="search-box">
-				<input type="text" class="form-control search-input" placeholder="Search interesting survey">
-				<a href="#search"><span class="glyphicon glyphicon-search search-icon" aria-hidden="true"></span></a>
+				<form action="/search">
+					<input name="q" type="text" class="form-control search-input" placeholder="Search interesting survey">
+					<span class="glyphicon glyphicon-search search-icon" aria-hidden="true"></span>
+				</form>
 			</div>
 			<div class="sign-btn-group">
 				<button type="button" class="btn btn-default btn-md btn-login">Login</button>
@@ -40,14 +42,16 @@
 		<div class="aside-wrapper">
 			<div class="login-box">
 				<p class="login-box-title">Enter here</p>
-				<input type="text" class="form-control" placeholder="PhoneNum, Email or user id">
-				<input type="text" class="form-control" placeholder="password">
-				<button type="button" class="btn btn-default btn-md">Log in</button>
-				<div class="social-login">
-					<a href=""><i class="login-face fa fa-facebook"></i></a>
-					<a href=""><i class="login-twitter fa fa-twitter"></i></a>
-					<a href=""><i class="login-google fa fa-google"></i></a>
-				</div>
+				<form action="/login">
+					<input name="id" type="text" class="form-control" placeholder="PhoneNum, Email or user id">
+					<input name="pw" type="password" class="form-control" placeholder="password">
+					<button type="submit" class="btn btn-default btn-md">Log in</button>
+					<div class="social-login">
+						<a href=""><i class="login-face fa fa-facebook"></i></a>
+						<a href=""><i class="login-twitter fa fa-twitter"></i></a>
+						<a href=""><i class="login-google fa fa-google"></i></a>
+					</div>
+				</form>
 			</div>
 			<div class="rank-box">
 				rank-box
