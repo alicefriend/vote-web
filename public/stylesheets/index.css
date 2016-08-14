@@ -1,3 +1,18 @@
+/****************************** default style start ******************************/
+.glyphicon {
+	opacity: 0.87;
+}
+
+.fa-twitter {
+	color: #55AACE
+}
+.fa-facebook {
+	color: #3B5998;
+}
+.fa-google {
+	color: #DF4A32;
+}
+
 /****************************** base structure start ******************************/
 body {
 	width: 1020px;
@@ -108,12 +123,50 @@ section {
 	border-width: 2px;
 }
 
+.sign-btn-group > button:hover {
+	background-color: #B2EBF2;
+	color: #FFF;
+	border-color: #FFF;
+}
 
 /****************************** aside style start ******************************/
 .rank-box, .hot-box, .suggest-box {
 	background-color: #FFF;
 	margin-bottom: 30px;
 }
+.login-box {
+	background-color: #80DEEA;
+	margin-bottom: 30px;
+	border-radius: 5px;
+	padding: 8px 15px;
+	height: 186px;
+}
+.login-box-title {
+	color: #FFF;
+	text-align: center;
+	font-size: 25px;
+}
+.login-box>input {
+	margin-bottom: 10px;
+}
+.login-box>button {
+	float: right;
+	color: #FFF;
+	border-color: #FFF;
+	background-color: #80DEEA;
+	border-width: 2px;
+}
+.login-box>button:hover {
+	background-color: #B2EBF2;
+	color: #FFF;
+	border-color: #FFF;
+}
+.social-login>*{
+	padding: 4px;
+	font-size: 26px;
+	margin-right: 3px;
+}
+
 .rank-box {
 	height: 250px;
 }
@@ -123,6 +176,8 @@ section {
 .suggest-box {
 	height: 300px;
 }
+
+
 
 
 /****************************** section survey style start ******************************/
