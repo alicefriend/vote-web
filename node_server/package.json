@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-	"test" : "mocha test.js"
+	"test" : "mocha test.js",
+	"watch" : "gulp watch"
   },
   "dependencies": {
     "body-parser": "~1.15.1",
@@ -14,6 +15,9 @@
     "jade": "~1.11.0",
     "morgan": "~1.7.0",
     "serve-favicon": "~2.3.0",
-	"request" : "~2.74.0"
+	"request" : "~2.74.0",
+	"gulp" : "3.8.11",
+	"gulp-mocha": "2.0.1",
+	"mocha": "2.2.4"
   }
 }

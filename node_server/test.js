@@ -16,10 +16,16 @@ describe('server', function() {
 	it('Test whether http client works', function(done) {
 		request('http://www.google.com', function (error, response, body) {
 			if (!error) {
-				console.log(body);
 				done();
 			}
+			assert.throws(function(){
+				throw 'Http Error!';
+			});
 		});
+	});
+
+	it('Test whether gulp works well', function() {
+		assert.equal('A', 'A');
 	});
 
 });
