@@ -1,0 +1,19 @@
+<div class="survey" ng-repeat="survey in surveys">
+	<div>
+		<div class="survey-title">{{survey.title}}</div>
+		<span class="survey-share glyphicon glyphicon-share"></span>
+	</div>
+	<div class="survey-mid">
+		<div class="survey-item" ng-repeat="item in survey.items">
+			<label><input type="radio" name="optradio">{{item.label}}</label>
+		</div>
+	</div>
+	<div class="survey-bottom">
+		<span class="survey-complain glyphicon glyphicon-thumbs-down"></span>
+		<span class="survey-pick glyphicon glyphicon-th-list" 
+		ng-show="survey.showResult"></span>
+		<span class="survey-result glyphicon glyphicon-triangle-right"
+		ng-show="!survey.showResult"></span>
+	</div>
+</div>
+

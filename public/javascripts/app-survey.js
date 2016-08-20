@@ -1,7 +1,6 @@
 var surveyApp = angular.module('surveyApp', []);
 
 surveyApp.controller('SurveyController', function($scope){
-
   $scope.survey = {
     title : "Who would you expect be the next president of America?",
     items : [
@@ -14,7 +13,6 @@ surveyApp.controller('SurveyController', function($scope){
       count : "30000001"
     }]
   };
-
 });
 
 surveyApp.controller('PostController', function($scope){

@@ -2,7 +2,6 @@
 .glyphicon {
 	opacity: 0.87;
 }
-
 .fa-twitter {
 	color: #55AACE
 }
@@ -12,7 +11,6 @@
 .fa-google {
 	color: #DF4A32;
 }
-
 input[type=submit] {
     padding: 0; 
     background: transparent; 
@@ -45,34 +43,26 @@ nav {
 	width: 15%;
 	display: block;
 	float: left;
+	border-radius: 5px;
+	background-color: #CFD8DC;
+	box-shadow: 1px 1px 3px #888888;
+	opacity: 0.86;
+	height: 1400px;
 }
 aside {
 	width: 25%;
 	display: block;
 	float: left;
+	border-radius: 5px;
+	background-color: #E9EBEE;
+	height: 600px;
 }
 section {
 	width: 60%;
 	padding: 0 25px;
 	display: block;
 	float: left;
-}
-.nav-wrapper, .aside-wrapper, .section-wrapper {
-	border-radius: 5px;
-}
-.nav-wrapper {
-	background-color: #CFD8DC;
-	box-shadow: 1px 1px 3px #888888;
-	opacity: 0.86;
-	height: 1400px;
-}
-.section-wrapper {
-	width: 100%;
 	background-color: #E9EBEE;
-}
-.aside-wrapper {
-	background-color: #E9EBEE;
-	height: 600px;
 }
 
 /****************************** header style start ******************************/
@@ -82,7 +72,7 @@ section {
 	margin: 0 auto;
 	padding-top: 5px;
 }
-.logo-box {
+.box-logo {
 	padding: 0px;
 	display: inline-block;
 	float: left;
@@ -101,7 +91,7 @@ section {
 }
 
 
-.search-box {
+.box-search {
 	float: left;
 }
 .search-button {
@@ -122,11 +112,11 @@ section {
 }
 
 
-.sign-btn-group {
+.box-sign-btn {
 	margin-top: 4px;
 	float: right;
 }
-.sign-btn-group > button {
+.box-sign-btn > button {
 	float: right;
 	width: 90px;
 	margin-right: 5px;
@@ -136,21 +126,21 @@ section {
 	border-width: 2px;
 }
 
-.sign-btn-group > button:hover {
+.box-sign-btn > button:hover {
 	background-color: #B2EBF2;
 	color: #FFF;
 	border-color: #FFF;
 }
 
 /****************************** aside style start ******************************/
-.rank-box, .hot-box, .suggest-box {
+.box-rank, .box-hot {
 	box-shadow: 1px 1px 4px #888888;
 	border-radius: 5px;
 	background-color: #CFD8DC;
 	margin-bottom: 30px;
 	opacity: 0.86;
 }
-.login-box {
+.box-login {
 	box-shadow: 1px 1px 4px #888888;
 	background-color: #CFD8DC;
 	margin-bottom: 30px;
@@ -159,21 +149,21 @@ section {
 	height: 186px;
 	opacity: .86;
 }
-.login-box-title {
+.box-login-title {
 	color: #FFF;
 	font-size: 25px;
 }
-.login-box input {
+.box-login input {
 	margin-bottom: 10px;
 }
-.login-box button {
+.box-login button {
 	float: right;
 	color: #FFF;
 	border-color: #FFF;
 	background-color: #CFD8DC;
 	border-width: 2px;
 }
-.login-box button:hover {
+.box-login button:hover {
 	background-color: #607D8B;
 	color: #FFF;
 	border-color: #FFF;
@@ -183,26 +173,14 @@ section {
 	font-size: 26px;
 	margin-right: 3px;
 }
-
-.rank-box {
+.box-rank {
 	height: 250px;
 }
-.hot-box {
+.box-rank {
 	height: 250px;
 }
-.suggest-box {
-	height: 300px;
-}
-
-
-
 
 /****************************** survey style start ******************************/
-.survey-item-container {
-	width: 100%;
-	background-color: #E9EBEE;
-}
-
 .survey {
 	width: 562px;
 	min-height: 180px;
@@ -211,21 +189,20 @@ section {
 	margin-bottom: 30px;
 	border-bottom: 1px solid #e1e8ed;
 }
-
 .survey .glyphicon {
 	font-size: 20px;
 	padding: 6px;
 	opacity: 0.54;
+	cursor: pointer;
 }
-
-.survey-top {
-	width: 100%;
-	height: 40px;
+.survey .glyphicon:hover {
+	color: black;
+	font-size: 21px;
+	opacity: 1.0;
 }
 .survey-title {
 	width: 474px;
 	float: left;
-	text-align: left;
 	font-size: 22px;
 	opacity: 0.87;
 	font-family: sans-serif;
@@ -236,45 +213,30 @@ section {
 	position: relative;
 	top: -3px;
 }
-.survey-share:hover {
-	font-size: 23px;
-	opacity: 0.86;
-	color: #3B5998;
-}
-
-
-.show-toggle-btn {
+.survey-pick {
 	float: right;
 }
-.show-toggle-btn .survey-select {
-	display: none;
+.survey-result {
+	float: right;
 }
-.show-toggle-btn .survey-result:hover {
-	color: #0097A7;
-	font-size: 23px;
-	opacity: 0.86;
+.survey .survey-complain {
+	opacity: 0.2;
 }
-.survey-bottom-btns .survey-complain {
-	opacity: 0.1;
-}
-.survey-bottom-btns .survey-complain:hover {
-	opacity: 0.56;
-}
-
 .survey-mid {
 	margin: 10px 0;
+	clear: both;
 }
-.survey-radio-box > .radio {
+.survey-item {
 	width: 100%;
 	margin: 0px;
-	cursor:pointer;
+	cursor: pointer;
 	border-radius: 10px;
 	padding: 15px 10px;
 	padding-top: 15px;
 	padding-bottom: 15px;
 	opacity: 0.87;
 }
-.survey-radio-box > .radio:hover {
+.survey-item:hover {
 	background-color: #E9EBEE;
 	padding-left: 8px;
 }
@@ -292,31 +254,42 @@ section {
 .post-title {
 	margin-bottom: 10px;
 }
-.post-survey-item {
-	margin-bottom: 10px;
-}
-.post-survey-item>input {
-	width: 90%;
+.post-item-add>input{
+	width: 95%;
 	height: 28px;
 	display: inline-block;
 }
-.post-item-plus {
+.post-item-label {
+	margin-bottom: 10px;
+}
+.post-item-label>input {
+	width: 90%;
+	height: 28px;
+	display: inline-block;
+	box-shadow: none;
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	border-radius: 0px;
+}
+.post-plus {
 	font-size: 20px;
 	float: right;
 	cursor: pointer;
 }
-.post-item-plus:hover {
+.post-plus:hover {
 	opacity: 1.0;
 	font-size: 21px;
 }
-.post-item-remove {
-	font-size: 20px;
+.post-remove {
+	padding: 5px;
+	font-size: 16px;
+	color: #E91E63;
 	float: right;
 	cursor: pointer;
 }
-.post-item-remove:hover {
+.post-remove:hover {
 	opacity: 1.0;
-	font-size: 21px;	
 }
 .post-survey-bottom {
 	height: 50px;

@@ -1,14 +1,14 @@
-<div class="post-survey" ng-controller="PostController">
+<div class="post-survey">
 	<p class="post-logo">Survey</p>
 	<textarea class="post-title form-control" ng-model="postSurvey.title" placeholder="Title" rows="1"></textarea>
-	<div class="post-survey-item" ng-repeat="item in postSurvey.items">
+	<div class="post-item-label" ng-repeat="item in postSurvey.items">
 		{{$index + 1}}
 		<input type="text" class="form-control" placeholder="Type item" ng-model="item">	
-		<span class="post-item-remove glyphicon glyphicon-remove" ng-click="removeItem($index)"></span>
+		<span class="post-remove glyphicon glyphicon-remove" ng-click="removeItem($index)"></span>
 	</div>
-	<div class="post-survey-item">
+	<div class="post-item-add">
 		<input type="text" class="form-control" placeholder="Type item, enter" ng-model="tempItem" ng-keypress="postEnter($event, tempItem)">	
-		<span class="post-item-plus glyphicon glyphicon-plus" ng-click="addItem(tempItem)"></span>
+		<span class="post-plus glyphicon glyphicon-plus" ng-click="addItem(tempItem)"></span>
 	</div>
 	<div class="post-survey-bottom">
 		<span class="post-button glyphicon glyphicon-pencil"></span>
