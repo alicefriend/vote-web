@@ -13,8 +13,8 @@ describe('server', function() {
 		server.close();
 	});
 
-	it('Test whether http client works', function(done) {
-		request('http://www.google.com', function (error, response, body) {
+	it('Server should response 200', function(done) {
+		request('http://127.0.0.1/', function (error, response, body) {
 			if (!error) {
 				done();
 			}
@@ -23,9 +23,35 @@ describe('server', function() {
 			});
 		});
 	});
+});
 
-	it('Test whether gulp works well', function() {
-		assert.equal('A', 'A');
+describe('route-signup', function() {
+	var server;
+
+	beforeEach(function() {
+		server = app.listen(8080);
 	});
 
+	afterEach(function(){
+		server.close();
+	});
+
+	it('simply just getback body', function(done) {
+		var signupInfo = { name : "test", email : "test@test", pw : "test" };
+
+		request({
+			url: 'http://127.0.0.1/signup', 
+			method: 'POST', 
+			json: signupInfo
+		}, function(error, response, body) {
+			if(!error && response.statusCode == 200 ) {
+				done();
+			}
+			assert(false, 'HTTP error');
+		});
+	});
+
+	
+
 });
+

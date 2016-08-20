@@ -16,3 +16,27 @@ surveyApp.controller('SurveyController', function($scope){
   };
 
 });
+
+surveyApp.controller('PostController', function($scope){
+    
+    $scope.postSurvey = {
+      title : "",
+      items : []
+    };
+
+    $scope.postEnter = function(keyEvent, tempItem) {
+      if (keyEvent.which == 13) {
+        $scope.addItem(tempItem);
+      }
+    }
+
+    $scope.addItem = function(tempItem) {
+      $scope.postSurvey.items.push(tempItem);
+      $scope.tempItem = "";
+    }
+
+    $scope.removeItem = function(index) {
+      $scope.postSurvey.items.splice(index, 1);
+    }
+
+});

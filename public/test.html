@@ -19,8 +19,8 @@
 			</div>
 			<div class="search-box">
 				<form action="/search">
-					<input name="q" type="text" class="form-control search-input" placeholder="Search interesting survey">
-					<span class="glyphicon glyphicon-search search-icon" aria-hidden="true"></span>
+					<input name="q" type="text" class="form-control search-input" placeholder="Search survey by title">
+					<span class="glyphicon glyphicon-search search-button" aria-hidden="true"></span>
 				</form>
 			</div>
 			<div class="sign-btn-group">
@@ -35,17 +35,18 @@
 	</nav>
 	<section>
 		<div class="section-wrapper">
+			<ng-include src="'post-survey.html'"></ng-include>
 			<ng-include src="'survey.html'"></ng-include>
 		</div>
 	</section>
 	<aside>
 		<div class="aside-wrapper">
 			<div class="login-box">
-				<p class="login-box-title">Enter here</p>
+				<p class="login-box-title">Come here</p>
 				<form action="/login">
-					<input name="id" type="text" class="form-control" placeholder="PhoneNum, Email or user id">
+					<input name="id" type="email" class="form-control" placeholder="email">
 					<input name="pw" type="password" class="form-control" placeholder="password">
-					<button type="submit" class="btn btn-default btn-md">Log in</button>
+					<button type="submit" class="btn btn-default btn-md">login</button>
 					<div class="social-login">
 						<a href=""><i class="login-face fa fa-facebook"></i></a>
 						<a href=""><i class="login-twitter fa fa-twitter"></i></a>
