@@ -9,11 +9,11 @@
 	<link rel="stylesheet" type="text/css" href="stylesheets/index.css">
 	<link rel="shortcut icon" href="/images/favicon.ico">
 </head>
-<body id="myPage" ng-app="surveyApp">
+<body ng-app="mainApp">
 	<header>
 		<div class="header-wrapper">
 			<div class="box-logo">
-				<a href="#myPage">
+				<a href="/test.html">
 					<img class="logo-img img-responsive" src="/images/logo.png">
 					<span class="logo-name">Vote</span>
 				</a>
@@ -26,7 +26,7 @@
 			</div>
 			<div class="box-sign-btn">
 				<button type="button" class="btn btn-default btn-md btn-login" data-toggle="modal" data-target="#loginModal">Login</button>
-				<button type="button" class="btn btn-default btn-md btn-signup">Sign up</button>
+				<button  type="button" class="btn btn-default btn-md btn-signup">Sign up</button>
 			</div>
 		</div>	
 	</header>
@@ -34,21 +34,23 @@
 	</nav>
 	<section>
 		<box-post></box-post>
-		<box-surveys></box-surveys>
+		<box-votes></box-votes>
 	</section>
 	<aside>
 		<div class="box-login">
 			<p class="box-login-title">Come here</p>
-			<form action="/login">
-				<input name="id" type="email" class="form-control" placeholder="email">
-				<input name="pw" type="password" class="form-control" placeholder="password">
-				<button type="submit" class="btn btn-default btn-md">login</button>
+			<div>
+				<input name="id" type="email" class="form-control" placeholder="email" 
+				ng-model="email">
+				<input name="pw" type="password" class="form-control" placeholder="password"
+				ng-model="pw">
+				<button type="submit" class="btn btn-default btn-md" ng-click="loginReq()">login</button>
 				<div class="social-login">
-					<a href=""><i class="login-face fa fa-facebook"></i></a>
-					<a href=""><i class="login-twitter fa fa-twitter"></i></a>
-					<a href=""><i class="login-google fa fa-google"></i></a>
+					<i class="login-face fa fa-facebook"></i>
+					<i class="login-twitter fa fa-twitter"></i>
+					<i class="login-google fa fa-google"></i>
 				</div>
-			</form>
+			</div>
 		</div>
 		<div class="box-rank">
 		</div>
@@ -99,6 +101,5 @@
 	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<!-- custom javascript-->
 	<script type="text/javascript" src="javascripts/index.js"></script>
-	<script type="text/javascript" src="javascripts/surveyApp.js"></script>
 </body>
 </html>
